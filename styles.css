@@ -1,0 +1,150 @@
+/* Shyam Patel 3/9/25, */
+/* Global Backgrounds, Colors, and Widths */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+header, nav ul, #content-wrapper {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+a {
+    color: #008000;
+}
+
+/* Logo */
+header {
+    position: relative;
+}
+
+header img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+header h1,
+nav ul {
+    padding-left: 50px;
+}
+
+/* Navbar */
+nav {
+    background-color: #008000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: black;
+    color: #9ae39a;
+}
+
+/* Home Page Main Image */
+main article img {
+    border: 3px double #333;
+    float: left;
+    margin: 0.5rem 1rem 0.5rem 0;
+}
+
+/* Home Page Bottom Columns */
+main section {
+    display: flex;
+}
+
+main section > div {
+    background-color: #e7ffe7;
+    border: 1px solid #008000;
+    border-radius: 10px;
+    flex: 1;
+    margin-right: 1rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+main section > div:last-child {
+    margin-right: 0;
+}
+
+main section > div h2 {
+    background-color: #008000;
+    color: white;
+    border-radius: 10px 10px 0 0;
+    margin-top: 0;
+    padding: 0.5rem;
+}
+
+main section > div img {
+    border: 3px double #333;
+    display: block;
+    margin: 0.5rem auto;
+}
+
+/* Sidebar */
+aside section {
+    background-color: white;
+    margin-bottom: 1rem;
+    border: 1px solid #008000;
+}
+
+aside h3 {
+    background-color: #008000;
+    color: white;
+    padding: 0.5rem;
+    margin: 0;
+}
+
+aside a {
+    display: inline-block;
+    padding: 0.5rem;
+}
+
+/* Home Page Columns Layout */
+#content-wrapper {
+    display: flex;
+}
+
+#content-wrapper aside {
+    background-color: #ccc;
+    margin-right: 1rem;
+    padding: 0.5rem;
+    position: relative;
+    top: 20px;
+    order: 1;
+    flex: 1;
+}
+
+#content-wrapper aside h2 {
+    margin-top: 0;
+    white-space: nowrap;
+}
+
+#content-wrapper main {
+    order: 2;
+    flex: 4;
+}
